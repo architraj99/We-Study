@@ -35,9 +35,20 @@ h2 {
 }
 
 #timer {
-    font-size: 48px;
-    margin: 10px 0;
+    font-size: 60px;
+    margin: 15px 0;
     color: #153be7;
+    letter-spacing: 2px;
+}
+
+#status {
+    font-size: 16px;
+    margin-top: 5px;
+}
+  
+#modeDisplay {
+    font-size: 14px;
+    color: #110707;
 }
 
 button {
@@ -46,7 +57,7 @@ button {
     border: none;
     background-color: #681c26;
     color: white;
-    border-radius: 5px;
+    min-width: 100px;
 }
 
 button:hover {
@@ -54,12 +65,40 @@ button:hover {
     cursor: pointer;
 }
 
-#status {
-    font-size: 20px;
-    color: #2e1e1e;
+button:active {
+    transform: scale(0.97);
 }
 
 ul {
     text-align: left;
     display: inline-block;
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+#sessions {
+    font-weight: bold;
+    color: #2f6fed;
+}
+
+#modeText {
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    div {
+        width: 90%;
+    }
+
+    #timer {
+        font-size: 40px;
+    }
+
+    button {
+        width: 100%;
+        margin: 6px 0;
+    }
 }
