@@ -30,7 +30,7 @@
 
         <button onclick="startTimer()">Start</button>
         <button onclick="pauseTimer()">Pause</button>
-        <button>Reset</button>
+        <button onclick="resetTimer()">Reset</button>
 
     </div>  
 
@@ -39,8 +39,8 @@
     <div>
         
         <h2>Modes</h2>
-        <button>Focus Mode</button>  
-        <button>Break Mode</button>
+        <button onclick="setFocusMode()">Focus Mode</button>  
+        <button onclick="setBreakMode()">Break Mode</button>
 
         <p>Focus Mode is for study or work time</p>
 
@@ -62,12 +62,7 @@
 
     <br>
 
-    <div>
-
-        <h2>NOTE</h2>
-
-        <p>Basic Layout. Styling and timer logic will be added soon! </p>
-    </div>
+   
     
     <script src="script.js"></script>
 
